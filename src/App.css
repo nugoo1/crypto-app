@@ -1,6 +1,31 @@
 body {
-  background: #f1f1f1;
-  padding:50px;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  padding-bottom: 50px;
+  }
+
+li {
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-ad {
+  margin-bottom: 30px;
 }
 
 .title {
@@ -17,10 +42,49 @@ body {
   box-shadow: 1px 1px 0 lightgrey;
 }
 
+.main-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .left {
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.name {
+  padding-left: 20px;
+}
+
+.name_text {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .right {
   float:right;
+}
+
+.crypto-icon {
+  height: 16px;
+  padding: 0 8px 0 15px;
+  width: 16px;
+}
+
+.text-center {
+    padding: 6px;
+    vertical-align: middle;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.table-style {
+  width: 100%;
+}
+
+.name {
+  width: 300px;
+}
+
+.rank {
+  width: 30px;
 }
