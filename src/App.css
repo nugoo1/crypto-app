@@ -3,6 +3,12 @@ body {
   padding:50px;
 }
 
+.title {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .crypto-container {
   background:white;
   width: 70%;
