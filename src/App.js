@@ -67,6 +67,8 @@ class App extends Component {
       <a target="_blank" href ="http://www.gundapower.com">
       <img src="/images/gunda-power-ad.jpg" alt="Sponsored by www.gundapower.com" className="header-ad" />
       </a>
+      
+      <img src="/images/gunda-power-ad.jpg" alt="Sponsored by www.gundapower.com" className="header-ad" />
       </div>
       <h1 className="title">Top 100 Cryptocurrencies By Market Capitalization</h1>
       <div className="crypto-container main-row">
