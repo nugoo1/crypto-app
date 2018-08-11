@@ -14,7 +14,9 @@ ul {
 li {
   display: block;
   float: left;
-  padding-right: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  padding-right: 50px;
 }
 
 
@@ -81,10 +83,101 @@ li {
   width: 100%;
 }
 
+.symbol {
+  width: 120px;
+}
+
 .name {
-  width: 300px;
+  width: 220px;
 }
 
 .rank {
   width: 30px;
+}
+
+.marketcap {
+  width: 180px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.price {
+  width: 100px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.volume {
+  width: 180px;
+  padding-right: 15px;
+  text-align: right;
+}
+.circ {
+  width: 150px;
+  padding-right: 15px;
+  text-align: right;
+}
+.change {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.graph {
+  text-align: right;
+  padding-left: 30px;
+  width: 165px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+/* Small Devices */
+@media only screen and (max-width: 1024px) {
+  
+  .graph {
+    display: none;
+  }
+
+  .circ {
+    display: none;
+  }
+  .volume {
+    display: none;
+  }
+  .marketcap {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+/* Medium Devices, Desktop */
+@media only screen and (min-width: 1300px) {
+    .symbol {
+      display: none;
+    }
+
+}
+
+
+/* Medium Devices, Desktop */
+@media only screen and (max-width: 1300px) {
+  .name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .crypto-container {
+    width:85%;
+  }
+  .symbol {
+    width: 120px;
+  }
 }
