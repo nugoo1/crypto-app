@@ -6,7 +6,7 @@ const table = (props) => (
    <div>
     {Object.values(props.state.map1).map((value) => (
         <div className="crypto-container main-row" key={value.id}>
-          <Link to={`/crypto/${value.symbol}`} className="crypto-link">      
+          <Link to={`/crypto/${value.symbol}`} className="crypto-link" params={{props}}>      
           <table className="table-style">
             <tbody>
             
@@ -27,7 +27,6 @@ const table = (props) => (
                   {value.name} ({value.symbol})
               </td>
               
-                
                 {Object.values(props.state.cryptos[value.id].quotes).map((last) => (
                   <div className="flex-row">
                     <td className="marketcap">

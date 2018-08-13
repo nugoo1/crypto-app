@@ -157,6 +157,13 @@ li {
   color: red;
 }
 
+.crypto-graph-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
 .crypto-graph {
   width: 800px;
   height: 400px;
