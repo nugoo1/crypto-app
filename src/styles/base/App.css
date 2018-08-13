@@ -48,7 +48,6 @@ li {
 }
 
 .main-row {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -91,33 +90,43 @@ li {
 }
 
 .name {
+  color: black;
   width: 220px;
 }
 
 .rank {
+  color: black;
   width: 30px;
 }
 
 .marketcap {
+  color: black;
   width: 180px;
   padding-right: 15px;
+  padding-top: 14px;
   text-align: right;
 }
 
 .price {
+  color: black;
   width: 100px;
   padding-right: 15px;
   text-align: right;
 }
 
 .volume {
+  color: black;
+  vertical-align: middle;
   width: 180px;
   padding-right: 15px;
+  padding-top: 14px;
   text-align: right;
 }
 .circ {
+  color: black;
   width: 150px;
   padding-right: 15px;
+  padding-top: 14px;
   text-align: right;
 }
 .change {
@@ -143,6 +152,16 @@ li {
   color: green;
 }
 
+.crypto-link:hover .crypto-link:visited, .crypto-link:link, .crypto-link:active {
+  text-decoration: none;
+  color: red;
+}
+
+.crypto-graph {
+  width: 800px;
+  height: 400px;
+}
+
 
 /* Small Devices */
 @media only screen and (max-width: 1024px) {
@@ -165,12 +184,20 @@ li {
     display: none;
   }
 
+  .header-ad{ 
+    width: -webkit-fill-available;
+  }
+
 }
+
 
 /* Medium Devices, Desktop */
 @media only screen and (min-width: 1300px) {
     .symbol {
       display: none;
+    }
+    .price {
+      padding-top: 14px;
     }
 
 }
@@ -181,6 +208,7 @@ li {
   .name {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 500px) {

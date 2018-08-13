@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/base/App.css';
+
 import axios from 'axios';
 
 import PageHeader from './components/PageHeader';

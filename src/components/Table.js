@@ -1,19 +1,19 @@
 import React from 'react';
 import numeral from 'numeral';
+import { Link } from 'react-router-dom';
 
 const table = (props) => (
-    <div>      
+   <div>
     {Object.values(props.state.map1).map((value) => (
         <div className="crypto-container main-row" key={value.id}>
+          <Link to={`/crypto/${value.symbol}`} className="crypto-link">      
           <table className="table-style">
             <tbody>
             
               <tr className="flex-row">
               
               <td className="rank">
-                <a href={`http://www.${value.id}.com`}>  
                 {value.rank}.
-                </a>
               </td>
 
               <td className="symbol">
@@ -27,9 +27,9 @@ const table = (props) => (
                   {value.name} ({value.symbol})
               </td>
               
-
+                
                 {Object.values(props.state.cryptos[value.id].quotes).map((last) => (
-                  <tr className="flex-row">
+                  <div className="flex-row">
                     <td className="marketcap">
                       {numeral(last.price * value.circ).format('$0,0')}
                     </td>
@@ -42,7 +42,7 @@ const table = (props) => (
                     <td className="circ">
                       {numeral(value.tot).format('0,0')}
                     </td>
-                  </tr>
+                  </div>
                 ))}
 
                 {Object.values(props.state.cryptos[value.id].quotes).map((last) => {
@@ -63,10 +63,12 @@ const table = (props) => (
               </tr>
             </tbody>
           </table>
+          </Link>
         </div>
       ))}
 
-    </div>
+      </div>
+
 );
 
 export default table;
